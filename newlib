@@ -3217,7 +3217,7 @@ function DiscordLib:Window(text)
 				KeybindText.TextXAlignment = Enum.TextXAlignment.Right
 				
 				Keybind.MouseButton1Click:Connect(function()
-					KeybindText.Text = "..."
+					KeybindText.Text = "Press Any Key"
 					local inputwait = game:GetService("UserInputService").InputBegan:wait()
 					if inputwait.KeyCode.Name ~= "Unknown" then
 						KeybindText.Text = inputwait.KeyCode.Name
